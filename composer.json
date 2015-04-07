@@ -1,0 +1,16 @@
+{
+    "name": "nauxliu/auto-correct",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NauxLiu",
+            "email": "nauxliu@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Naux\\": ""
+        }
+    }
+}
