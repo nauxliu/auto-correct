@@ -18,13 +18,11 @@ class AutoCorrect
 
     public function auto_space($content)
     {
-        $content = preg_replace('~(\p{Han})([a-zA-Z0-9\p{Ps}])(?![^<]*>)~u', '\1 \2', $content);
-        $content = preg_replace('~([a-zA-Z0-9\p{Pe}])(\p{Han})(?![^<]*>)~u', '\1 \2', $content);
-        $content = preg_replace('~([!?‽:;,.])(\p{Han})~u', '\1 \2', $content);
-        $content = preg_replace('~(\p{Han})(<[a-zA-Z]+?.*?>)~u', '\1 \2', $content);
-        $content = preg_replace('~(\p{Han})(<\/[a-zA-Z]+>)~u', '\1\2 ', $content);
-        $content = preg_replace('~(<\/[a-zA-Z]+>)(\p{Han})~u', '\1 \2', $content);
-        $content = preg_replace('~(<[a-zA-Z]+?.*?>)(\p{Han})~u', ' \1\2', $content);
+        $content = preg_replace('~((?![年月日号])\p{Han})([a-zA-Z0-9+$@#\[\(\/‘“])~u', '\1 \2', $content);
+        $content = preg_replace('~([a-zA-Z0-9+$’”\]\)@#!\/]|[\d[年月日]]{2,})((?![年月日号])\p{Han})~u', '\1 \2', $content);
+        # Fix () [] near the English and number
+        $content = preg_replace('~([a-zA-Z0-9]+)([\[\(‘“])~u', '\1 \2', $content);
+        $content = preg_replace('~([\)\]’”])([a-zA-Z0-9]+)~u', '\1 \2', $content);
 
         return $content;
     }
