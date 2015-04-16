@@ -90,6 +90,7 @@
     'ioc'           => 'IoC',
     'phpspec'       => 'PHPSpec',
     'codeception'   => 'Codeception',
+    'thinkphp'      => 'ThinkPHP',
 
     # Cocoa
     'afnetworking'  => 'AFNetworking',
@@ -184,11 +185,17 @@
     'requirejs'     => 'RequireJS',
     'underscore'    => 'Underscore',
     'angularjs'     => 'AngularJS',
+    'emberjs'       => 'Ember.js',
     'backbone'      => 'Backbone',
     'seajs'         => 'SeaJS',
     'imagemagick'   => 'ImageMagick',
     'fluentd'       => 'Fluentd',
     'ffmpeg'        => 'FFMPEG',
+    'wordpress'     => 'WordPress',
+    'drupal'        => 'Drupal',
+    'joomla'        => 'Joomla',
+    'piwik'         => 'Piwik',
+    'discuz'        => 'Discuz!',
 
     # Tools
     'git'           => 'Git',
