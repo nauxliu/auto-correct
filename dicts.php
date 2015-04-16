@@ -245,4 +245,5 @@
     'vpn'           => 'VPN',
     'arm'           => 'ARM',
     'cpu'           => 'CPU',
+    'pdf'           => 'PDF',
     );
