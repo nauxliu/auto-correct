@@ -30,7 +30,7 @@ class AutoCorrect
     public function auto_correct($content)
     {
         foreach ($this->dicts as $from => $to) {
-            $content = str_ireplace($from, $to, $content);
+            $content = preg_replace("/\b$from\b/i", $to, $content);
         }
 
         return $content;
