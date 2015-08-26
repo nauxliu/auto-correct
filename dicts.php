@@ -84,6 +84,7 @@
         'php'           => 'PHP',
         'pear'          => 'Pear',
         'laravel'       => 'Laravel',
+        'lumen'         => 'Lumen',
         'laravel4'      => 'Laravel 4',
         'laravel5'      => 'Laravel 5',
         'traits'        => 'Traits',
