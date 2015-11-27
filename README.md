@@ -13,14 +13,15 @@ use Naux\AutoCorrect;
 
 $correct = new AutoCorrect;
 
-// 加入空格并纠正词汇
-$correct->convert($value);
-
 // 在中英文之间加入合理的空格
-$correct->auto_space($value);
+$correct->auto_space("php是世界上最好的语言，之一"); // php 是世界上最好的语言，之一
 
 // 纠正专用词汇大小写
-$correct->auto_correct($value);
+$correct->auto_correct("php是世界上最好的语言，之一"); // PHP是世界上最好的语言，之一
+
+// 加入空格并纠正词汇（auto_space + auto_correct）
+$correct->convert("php是世界上最好的语言，之一"); // PHP 是世界上最好的语言，之一
+
 ```
 
 ## 应用案例
