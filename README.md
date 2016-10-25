@@ -22,6 +22,9 @@ $correct->auto_correct("php是世界上最好的语言，之一"); // PHP是世�
 // 加入空格并纠正词汇（auto_space + auto_correct）
 $correct->convert("php是世界上最好的语言，之一"); // PHP 是世界上最好的语言，之一
 
+//添加外置词典，可添加多个
+echo $auto->withDict(__DIR__.'/dicts.php')->withDict(__DIR__.'/dicts.php')->convert('「介绍」phphub是国内php和laravel社区');
+
 ```
 
 ## 应用案例
