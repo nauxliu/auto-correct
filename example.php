@@ -7,4 +7,4 @@ $auto = new Naux\AutoCorrect();
 echo $auto->convert('「介绍」phphub是国内php和laravel社区');
 
 //添加外置词典
-echo $auto->withDict(__DIR__.'/dicts.php')->convert('「介绍」phphub是国内php和laravel社区');
+echo $auto->withDict(require __DIR__.'/dicts.php')->convert('「介绍」phphub是国内php和laravel社区');

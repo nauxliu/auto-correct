@@ -11,7 +11,7 @@ class AutoCorrect
 
     public function withDict($dicts)
     {
-        $this->dicts = array_merge($this->dicts,include $dicts);
+        $this->dicts = array_merge($this->dicts,$dicts);
 
         return $this;
     }
