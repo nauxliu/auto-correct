@@ -9,6 +9,13 @@ class AutoCorrect
         $this->dicts = include __DIR__.'/dicts.php';
     }
 
+    public function withDict($dicts)
+    {
+        $this->dicts = array_merge($this->dicts,$dicts);
+
+        return $this;
+    }
+
     public function convert($content)
     {
         $content = $this->auto_space($content);
