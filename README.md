@@ -23,8 +23,10 @@ $correct->auto_correct("php是世界上最好的语言，之一"); // PHP是世�
 $correct->convert("php是世界上最好的语言，之一"); // PHP 是世界上最好的语言，之一
 
 //添加外置词典，可添加多个
-echo $auto->withDict(require __DIR__.'/dicts.php')->withDict(__DIR__.'/dicts.php')->convert('「介绍」phphub是国内php和laravel社区');
-
+echo $auto
+  ->withDict(['hello owlrd' => 'Hello Wrold'])
+  ->withDict(['foo bar' => 'Foo Bar'])
+  ->convert('hello world, foo bar, phphub'); // Hello World, Foo Bar, PHPHub
 ```
 
 ## 应用案例
