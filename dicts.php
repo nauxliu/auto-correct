@@ -194,7 +194,7 @@
         'seajs'         => 'SeaJS',
         'imagemagick'   => 'ImageMagick',
         'fluentd'       => 'Fluentd',
-        'ffmpeg'        => 'FFMPEG',
+        'ffmpeg'        => 'FFmpeg',
         'wordpress'     => 'WordPress',
         'drupal'        => 'Drupal',
         'joomla'        => 'Joomla',
