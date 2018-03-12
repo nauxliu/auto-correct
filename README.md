@@ -33,3 +33,6 @@ echo $auto
 
 [PHPHub](https://phphub.org/) - 整站标题都做了自动转换处理。  
 [Laravel.so](http://laravel.so/) - 整站标题都做了自动转换处理。
+
+## TODO
+feature : 添加针对 文本文档的快速添加中英文之间的合理空格和纠正专用词汇大小写
