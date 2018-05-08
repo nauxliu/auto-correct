@@ -31,5 +31,4 @@ echo $auto
 
 ## 应用案例
 
-[PHPHub](https://phphub.org/) - 整站标题都做了自动转换处理。  
-[Laravel.so](http://laravel.so/) - 整站标题都做了自动转换处理。
+[LaravelChina (PHPHub)](https://laravel-china.org/) - 整站标题都做了自动转换处理。
