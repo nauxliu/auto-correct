@@ -35,4 +35,7 @@ echo $auto
 [Laravel.so](http://laravel.so/) - 整站标题都做了自动转换处理。
 
 ## TODO
-feature : 添加针对 文本文档的快速添加中英文之间的合理空格和纠正专用词汇大小写
+
+feature : 添加对markdown 文档的快速纠正功能 (<--- 例如这里,空格之神参上)
+feature : 添加支持传入一个文件,对一个文件快速纠正
+feature : 支持传入文件夹,对文件夹内的文件遍历,修改指定格式的文件
