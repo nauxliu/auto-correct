@@ -1,4 +1,5 @@
-<?php namespace Naux;
+<?php
+namespace Naux;
 
 class AutoCorrect
 {
@@ -9,6 +10,7 @@ class AutoCorrect
         $this->dicts = include __DIR__.'/dicts.php';
     }
 
+    //添加字典
     public function withDict($dicts)
     {
         $this->dicts = array_merge($this->dicts,$dicts);
@@ -16,13 +18,14 @@ class AutoCorrect
         return $this;
     }
 
+    //
     public function convert($content)
     {
         $content = $this->auto_space($content);
-
         return $this->auto_correct($content);
     }
 
+    //空白之神参上
     public function auto_space($content)
     {
         $content = preg_replace('~((?![年月日号])\p{Han})([a-zA-Z0-9+$@#\[\(\/‘“])~u', '\1 \2', $content);
@@ -34,6 +37,7 @@ class AutoCorrect
         return $content;
     }
 
+    //自动修正大小写
     public function auto_correct($content)
     {
         foreach ($this->dicts as $from => $to) {
