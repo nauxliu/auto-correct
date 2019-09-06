@@ -12,5 +12,11 @@
         "psr-4": {
             "Naux\\": ""
         }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "scripts": {
+        "phpcs": "php-cs-fixer fix . --ansi"
     }
 }
