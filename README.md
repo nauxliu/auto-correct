@@ -1,13 +1,16 @@
 # auto-correct
+
 自动给中英文之间加入合理的空格并纠正专用名词大小写
 
 ## 安装
-首先你需要安装有 `composer`，然执行下面的命令安装：
+
+首先你需要安装有 `composer`，然后执行下面的命令安装：
 ```
 composer require naux/auto-correct
 ```
 
 ## 使用
+
 ```php
 use Naux\AutoCorrect;
 
